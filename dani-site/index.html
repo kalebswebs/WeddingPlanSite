@@ -8,13 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Petit+Formal+Script&display=swap" rel="stylesheet">
-<!--
-  LOVELACE FONT: Lovelace (Zetafonts) is a paid font and can't be linked from a free CDN.
-  Once you have the licensed font files, drop them into assets/fonts/ and uncomment the
-  @font-face block at the top of css/styles.css — the --font-body variable already points
-  to "Lovelace" first, so the whole site will pick it up automatically with zero other changes.
-  Until then, the site uses Cormorant Garamond as a close elegant-serif stand-in.
--->
+
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -22,7 +16,10 @@
 <!-- ===== NAV ===== -->
 <header class="site-header" id="siteHeader">
   <div class="wrap header-inner">
-    <a href="#top" class="wordmark">DANI CYMONE <span>EVENTS</span></a>
+    <a href="#top" class="site-logo" aria-label="Destinations with Dani — Home">
+      <img src="assets/images/EditedDaniLogo.jpg" alt="Destinations with Dani" class="logo-img">
+      <span class="wordmark">DANI CYMONE <span>EVENTS</span></span>
+    </a>
     <nav class="primary-nav" aria-label="Primary">
       <a href="#experience">Experience</a>
       <a href="#investment">Investment</a>
@@ -45,23 +42,15 @@
       <div class="hero-actions">
         <a href="https://danicymoneevents.hbportal.co/public/6537eff61da5b40085b5f3f3/1-Schedule" target="_blank" rel="noopener noreferrer" class="btn btn-solid">Plan My Destination Wedding</a>
       </div>
-      <p class="hero-price"><span class="dash"></span>Destination Wedding Planning &nbsp;&bull;&nbsp; from $1,500</p>
+      <p class="hero-price"><span class="dash"></span>Destination Wedding Planning &nbsp;&bull;&nbsp; from $1,800</p>
     </div>
 
     <div class="hero-visual">
       <div class="slideshow" id="heroSlideshow">
-        <div class="slide is-active" style="background-image:url('assets/images/couples/couple-1.jpg')">
-          <span class="slide-caption">Amara &amp; Josiah <em>Jamaica</em></span>
-        </div>
-        <div class="slide" style="background-image:url('assets/images/couples/couple-2.jpg')">
-          <span class="slide-caption">Renee &amp; Devin <em>Tulum, Mexico</em></span>
-        </div>
-        <div class="slide" style="background-image:url('assets/images/couples/couple-3.jpg')">
-          <span class="slide-caption">Priya &amp; Aaron <em>Turks &amp; Caicos</em></span>
-        </div>
-        <div class="slide" style="background-image:url('assets/images/couples/couple-4.jpg')">
-          <span class="slide-caption">Camille &amp; Theo <em>Riviera Maya</em></span>
-        </div>
+        <div class="slide is-active" style="background-image:url('assets/images/couples-1.jpg')"></div>
+        <div class="slide" style="background-image:url('assets/images/couples-2.jpg')"></div>
+        <div class="slide" style="background-image:url('assets/images/couples-3.jpg')"></div>
+        <div class="slide" style="background-image:url('assets/images/couples-4.jpg')"></div>
 
         <div class="compass-mini spin-slow" aria-hidden="true">
           <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="17" fill="none" stroke="#f8f4f1" stroke-width="1.2"/><path d="M20,6 L24,20 L20,34 L16,20 Z" fill="#f8f4f1"/></svg>
@@ -84,7 +73,7 @@
           <span class="compass-mini-badge" aria-hidden="true">
             <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="17" fill="none" stroke="#b89b99" stroke-width="1.2"/><path d="M20,6 L24,20 L20,34 L16,20 Z" fill="#b89b99"/></svg>
           </span>
-          <span>Jamaica &middot; Wedding Weekend</span>
+          <span>Make Your Wedding &middot; One To Remember</span>
         </div>
         <div class="hero-card-route">
           <span>Planning</span><i></i><span>Travel</span><i></i><span>Guest Experience</span>
@@ -123,12 +112,7 @@
           <h3>Planning</h3>
           <p>We map your vision, guest count, and budget into a real, working plan &mdash; venue, vendors, and a timeline built around your travel dates.</p>
         </div>
-        <div class="pass-stub">
-          <span class="stub-label">SEAT</span>
-          <span class="stub-value">01</span>
-          <span class="stub-label">GATE</span>
-          <span class="stub-value">A1</span>
-        </div>
+        <div class="pass-stub"></div>
       </article>
 
       <article class="boarding-pass">
@@ -145,12 +129,7 @@
           <h3>Travel</h3>
           <p>Flights, room blocks, transfers, and legal paperwork &mdash; coordinated so your guests get one clear itinerary, not twelve confusing emails.</p>
         </div>
-        <div class="pass-stub">
-          <span class="stub-label">SEAT</span>
-          <span class="stub-value">02</span>
-          <span class="stub-label">GATE</span>
-          <span class="stub-value">B4</span>
-        </div>
+        <div class="pass-stub"></div>
       </article>
 
       <article class="boarding-pass">
@@ -167,12 +146,7 @@
           <h3>Guest Experience</h3>
           <p>On-site coordination from welcome dinner to send-off, so you and every guest are simply&nbsp;&mdash;&nbsp;present.</p>
         </div>
-        <div class="pass-stub">
-          <span class="stub-label">SEAT</span>
-          <span class="stub-value">03</span>
-          <span class="stub-label">GATE</span>
-          <span class="stub-value">C7</span>
-        </div>
+        <div class="pass-stub"></div>
       </article>
     </div>
   </div>
@@ -256,8 +230,14 @@
 <footer class="site-footer">
   <div class="wrap footer-inner">
     <div class="footer-brand">
-      <span class="wordmark">DANI CYMONE <span>EVENTS</span></span>
-      <p>Destination weddings, beautifully planned.</p>
+      <img src="assets/images/EditedDaniLogo.jpg" alt="Destinations with Dani" class="footer-logo">
+      <div class="footer-brand-text">
+        <p>Destination weddings, beautifully planned.</p>
+        <p class="footer-contact">
+          <a href="tel:19014921091">901-492-1091</a><br>
+          <a href="mailto:hello@danicymoneevents.com">HELLO@DANICYMONEEVENTS.COM</a>
+        </p>
+      </div>
     </div>
     <div class="footer-info">
       <div class="footer-block">
