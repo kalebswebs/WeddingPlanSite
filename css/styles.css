@@ -1,23 +1,25 @@
-/* ============ LOVELACE (licensed font — add files to enable) ============
-   Uncomment once you've dropped licensed Lovelace files into assets/fonts/.
+/* ============ LOVELACE ============
+   Files provided: Lovelace Text Regular + Lovelace Text Bold Italic.
    The --font-body variable below already lists "Lovelace" first, so once
-   this @font-face resolves, every body text element switches over automatically.
+   these @font-face rules resolve, every body text element switches over automatically.
+   Note: there's no separate "regular italic" file, so italic text at normal
+   weight will fall back to the browser's faux-italic of the Regular file
+   until/unless a true regular-italic file is added. */
 
 @font-face{
   font-family: "Lovelace";
-  src: url("../assets/fonts/Lovelace-Text.woff2") format("woff2");
+  src: url("../assets/fonts/Lovelace-Text.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face{
   font-family: "Lovelace";
-  src: url("../assets/fonts/Lovelace-Text-Italic.woff2") format("woff2");
-  font-weight: 400;
+  src: url("../assets/fonts/Lovelace-Text-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
   font-style: italic;
   font-display: swap;
 }
-*/
 
 /* ============ TOKENS ============ */
 :root{
@@ -381,6 +383,13 @@ ul{ margin:0; padding:0; list-style:none; }
   aspect-ratio: 4 / 5;
 }
 .investment-visual svg{ width:100%; height:100%; }
+.investment-photo{
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 400 / 500;
+  object-fit: cover;
+  object-position: center;
+}
 
 /* ============ ABOUT ============ */
 .about-grid{ display:grid; grid-template-columns: 0.85fr 1fr; gap: 64px; align-items:center; }
